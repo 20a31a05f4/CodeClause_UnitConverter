@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+
+        <!-- Length Converter -->
+        <div class="converter">
+            <h2>Length</h2>
+            <div class="input-group">
+                <input type="number" id="lengthValue" placeholder="Enter value">
+                <select id="lengthFromUnit">
+                    <option value="mm">mm</option>
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                    <option value="in">in</option>
+                    <option value="ft">ft</option>
+                    <option value="yd">yd</option>
+                    <option value="mi">mi</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="number" id="lengthResult" readonly>
+                <select id="lengthToUnit">
+                    <option value="mm">mm</option>
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                    <option value="in">in</option>
+                    <option value="ft">ft</option>
+                    <option value="yd">yd</option>
+                    <option value="mi">mi</option>
+                </select>
+            </div>
+            <button id="lengthConvertBtn">Convert</button>
+        </div>
+
+        <!-- Temperature Converter -->
+        <div class="converter">
+            <h2>Temperature</h2>
+            <div class="input-group">
+                <input type="number" id="tempValue" placeholder="Enter value">
+                <select id="tempFromUnit">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="number" id="tempResult" readonly>
+                <select id="tempToUnit">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+            </div>
+            <button id="tempConvertBtn">Convert</button>
+        </div>
+
+        <!-- Weight Converter -->
+        <div class="converter">
+            <h2>Weight</h2>
+            <div class="input-group">
+                <input type="number" id="weightValue" placeholder="Enter value">
+                <select id="weightFromUnit">
+                    <option value="mg">mg</option>
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="oz">oz</option>
+                    <option value="lb">lb</option>
+                    <option value="t">t</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="number" id="weightResult" readonly>
+                <select id="weightToUnit">
+                    <option value="mg">mg</option>
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="oz">oz</option>
+                    <option value="lb">lb</option>
+                    <option value="t">t</option>
+                </select>
+            </div>
+            <button id="weightConvertBtn">Convert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
